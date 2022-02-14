@@ -18,8 +18,8 @@ add_subdirectory(./src/decorator)
 
 # 指定生成目标
 add_executable(example_adapter ./src/example/example_adapter.cpp)
-add_executable(ezample_decorator ./src/example/ezample_decorator.cpp)
+add_executable(example_decorator ./src/example/example_decorator.cpp)
 
 # 链接库
 target_link_libraries(example_adapter adapter)
-target_link_libraries(ezample_decorator decorator)
+target_link_libraries(example_decorator decorator)
