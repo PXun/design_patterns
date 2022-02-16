@@ -9,6 +9,7 @@ include_directories(./src/adapter)
 include_directories(./src/decorator)
 include_directories(./src/cor)
 include_directories(./src/strategy)
+include_directories(./src/proxy)
 include_directories(./src/example)
 
 # 指定生成路径
@@ -19,15 +20,18 @@ add_subdirectory(./src/adapter)
 add_subdirectory(./src/decorator)
 add_subdirectory(./src/cor)
 add_subdirectory(./src/strategy)
+add_subdirectory(./src/proxy)
 
 # 指定生成目标
 add_executable(example_adapter ./src/example/example_adapter.cpp)
 add_executable(example_decorator ./src/example/example_decorator.cpp)
 add_executable(example_cor ./src/example/example_cor.cpp)
 add_executable(example_strategy ./src/example/example_strategy.cpp)
+add_executable(example_proxy ./src/example/example_proxy.cpp)
 
 # 链接库 - 不能使用相对路径
 target_link_libraries(example_adapter adapter)
 target_link_libraries(example_decorator decorator)
 target_link_libraries(example_cor cor)
 target_link_libraries(example_strategy strategy)
+target_link_libraries(example_proxy proxy)
