@@ -11,7 +11,7 @@ include_directories(./src/_example)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../bin")
 
 # 设置List
-set(List adapter decorator cor strategy proxy factory prototype template facade builder observer state memento composite singleton bridge)
+set(List adapter decorator cor strategy proxy factory prototype template facade builder observer state memento composite singleton bridge command)
 
 # 循环
 foreach(list ${List})
