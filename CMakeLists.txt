@@ -13,7 +13,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../bin")
 # 设置List
 set(List factory prototype builder singleton # 创建型模式
 adapter decorator bridge composite facade flyweight proxy # 结构型模式
-cor strategy template observer state memento  command mediator  interpreter) # 行为型模式
+cor strategy template observer state memento command mediator interpreter visitor) # 行为型模式
 
 # 循环
 foreach(list ${List})
